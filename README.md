@@ -19,7 +19,7 @@ Note: Atleast 80% of the resources are observed to follow the set default settin
 
 Other advantages:
 1. Compatible with any existing work/innovation on Terraform of your organization
-2. Easy & sreamlined methods to override the default settings to cater to your specific configuration needs.
+2. Easy & streamlined methods to override the default settings to cater to your specific configuration needs.
 3. Written using Terraform's (most famous IaC 2022) built-in language: Terraform Language
 
 Disadvantages:
@@ -33,4 +33,4 @@ Pre-requisities for using the script:
 
 How to setup the script (one time setup):
 1. Enter your AWS access key using `aws configure` command of AWS CLI
-2. Configure the script for default settings. Make sure to choose those settings as default which majority of your resources are expected to follow.
+2. Configure the script for default settings. Make sure to choose those settings as default which majority of your endpoints are expected to follow.
