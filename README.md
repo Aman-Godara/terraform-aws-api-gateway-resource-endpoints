@@ -1,21 +1,21 @@
-# terraform-aws-api-gateway-resource-endpoints
+# terraform-aws-api-gateway-resources-methods
 
-Terraform script to create resource endpoints on AWS API Gateway. To know more about Terraform (IaC) visit: https://www.terraform.io.
+Terraform script to create resources and GET, PUT, POST, DELETE, OPTIONS methods on AWS API Gateway. To know more about Terraform (IaC) visit: https://www.terraform.io.
 
 ---
-This script is a DEMONSTRATION script written to set the stage for discussions on the ACTUAL script and highlight the capabilities of ACTUAL script. This DEMO script is freely available, but has very limited functionalities. ACTUAL script provides all functionalities to create endpoints, but is pay-walled. To buy ACTUAL script (expected price <= 25 USD, 100% refund within 7 days), please wait for the first official release.
+This script is a DEMONSTRATION script written to set the stage for discussions on the ACTUAL script and highlight the capabilities of ACTUAL script. This DEMO script is freely available, but has very limited functionalities. ACTUAL script provides all functionalities to create resources & methods, but is pay-walled. To buy ACTUAL script (expected price <= 25 USD, 100% refund within 7 days), please wait for the first official release.
 
 ---
 Features of ACTUAL script
 
 written in: Terraform Language (Declarative)
 
-Advantages of using script over traditional method of creating resources i.e. AWS management console's UI:
-1. Saves time & energy of developers, especially for resources which follow the default settings
-2. Reduces chances of making CORS errors or any other errors concerning AWS resources' setup
-3. Requires zero knowledge of AWS to create resources which follow the default settings
+Advantages of using script over traditional method of creating resources & methods i.e. AWS management console's UI:
+1. Saves time & energy of developers, especially for methods which follow the default settings
+2. Reduces chances of making CORS errors or any other errors concerning AWS setup
+3. Requires zero knowledge of AWS to create methods which follow the default settings
 
-Note: Atleast 80% of the resources are observed to follow the set default settings, for which the script promises to express its advantages 1 and 3 the best.
+Note: Atleast 80% of the methods are observed to follow the set default settings, for which the script promises to express its advantages 1 and 3 the best.
 
 Other advantages:
 1. Compatible with any existing work/innovation on Terraform of your organization
@@ -33,4 +33,4 @@ Pre-requisities for using the script:
 
 How to setup the script (one time setup):
 1. Enter your AWS access key using `aws configure` command of AWS CLI
-2. Configure the script for default settings. Make sure to choose those settings as default which majority of your endpoints are expected to follow.
+2. Configure the script for default settings. Make sure to choose those settings as default which majority of your methods are expected to follow.
