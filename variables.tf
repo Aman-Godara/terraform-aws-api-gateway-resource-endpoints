@@ -1,5 +1,5 @@
 variable "sep" {
-  description = "Key separator"
+  description = "key separator"
   nullable    = false
   type        = string
   default     = " - "
@@ -8,12 +8,14 @@ variable "sep" {
 variable "aws_region" {
   description = "AWS region"
   nullable    = false
-  type        = string
+
+  type = string
 }
 
 variable "apis" {
-  description = "default settings for apis"
+  description = "default settings for aws apis"
   nullable    = false
+
   type = map(object({
     rest_api_id = string
     root_id     = string
@@ -38,8 +40,9 @@ variable "apis" {
 }
 
 variable "resources" {
-  description = "create resources and methods"
+  description = "create resources and methods, override defaults settings"
   nullable    = false
+
   type = map(object({
     apis = map(object({
       methods = optional(map(object({

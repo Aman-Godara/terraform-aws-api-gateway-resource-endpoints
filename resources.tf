@@ -16,7 +16,7 @@ resource "aws_api_gateway_method" "method" {
   authorization = each.value.authorization
   authorizer_id = each.value.authorizer_id
   request_parameters = { for k, v in local.resource_method_request_parameters[each.value.resource_method_key] :
-    v => v.required
+    v.value => v.required if substr(v.value, 0, 15) == "method.request."
   }
 }
 
@@ -43,9 +43,8 @@ resource "aws_api_gateway_method_response" "method_response" {
   rest_api_id = each.value.rest_api_id
   resource_id = aws_api_gateway_resource.resource[each.value.api_resource_key].id
 
-  http_method     = each.value.http_method
-  status_code     = each.value.status_code
-  response_models = null
+  http_method = each.value.http_method
+  status_code = each.value.status_code
 
   response_parameters = { for k, v in each.value.response_parameters :
     k => v.return
@@ -58,11 +57,10 @@ resource "aws_api_gateway_integration_response" "integration_response" {
   rest_api_id = each.value.rest_api_id
   resource_id = aws_api_gateway_resource.resource[each.value.api_resource_key].id
 
-  http_method        = each.value.http_method
-  status_code        = each.value.status_code
-  selection_pattern  = each.value.selection_pattern
-  response_templates = null
-  content_handling   = each.value.content_handling
+  http_method       = each.value.http_method
+  status_code       = each.value.status_code
+  selection_pattern = each.value.selection_pattern
+  content_handling  = each.value.content_handling
 
   response_parameters = { for k, v in each.value.response_parameters :
     k => v.value
