@@ -1,5 +1,6 @@
+# fill the details between <>
 module "api-gateway-resources-methods" {
-  source  = "Aman-Godara/api-gateway-resources-methods/aws"
+  source  = "../.."
   version = "1.0.1"
 
   # details of aws region
