@@ -1,7 +1,6 @@
 # fill the details between <>
 module "api-gateway-resources-methods" {
-  source  = "../../"
-  version = "1.0.1"
+  source = "../../"
 
   # details of aws region
   aws_region = "<aws region>"
