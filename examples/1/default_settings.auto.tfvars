@@ -1,5 +1,8 @@
 # fill the details between <>
 
+aws_region = "<aws region>"
+
+
 # default settings for dev and staging apis
 # THIS WILL BE FILLED BY THE DEVOPS ENGINEER
 apis = {
