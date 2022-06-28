@@ -1,1 +1,1 @@
-README.md
+# fill the details between <> in main.tf and .auto.tfvars files
