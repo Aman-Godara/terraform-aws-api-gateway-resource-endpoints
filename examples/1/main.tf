@@ -2,12 +2,12 @@ module "api-gateway-resources-methods" {
   source  = "Aman-Godara/api-gateway-resources-methods/aws"
   version = "1.0.1"
 
-  // details of aws region
+  # details of aws region
   aws_region = "<aws region>"
 
 
-  // default settings for dev and staging apis
-  // THIS WILL BE FILLED BY THE DEVOPS ENGINEER
+  # default settings for dev and staging apis
+  # THIS WILL BE FILLED BY THE DEVOPS ENGINEER
   apis = {
     "dev" = {
       rest_api_id = "<id of dev rest api>"
@@ -130,15 +130,15 @@ module "api-gateway-resources-methods" {
   }
 
 
-  // details of 3 resources & their methods
-  // THIS WILL BE FILLED BY BACKEND ENGINEERS, WHEN DEFAULT SETTINGS ARE OVERRIDEN THEY SHOULD BE VERIFIED BY THE DEVOPS ENGINEER
+  # details of 3 resources & their methods
+  # THIS WILL BE FILLED BY BACKEND ENGINEERS, WHEN DEFAULT SETTINGS ARE OVERRIDEN THEY SHOULD BE VERIFIED BY THE DEVOPS ENGINEER
   resources = {
     "/resourceone" = {
 
-      // this resource will be created on dev api, no default settings will be overridden
+      # this resource will be created on dev api, no default settings will be overridden
       apis = { dev = {} }
 
-      // this resource has 3 methods: OPTIONS, POST & GET
+      # this resource has 3 methods: OPTIONS, POST & GET
       methods = {
         "OPTIONS" = {
           request = {
@@ -182,18 +182,18 @@ module "api-gateway-resources-methods" {
     }
 
     "/resourcetwo" = {
-      // this resource will be created on dev and stage api
+      # this resource will be created on dev and stage api
       apis = { dev = {}, staging = {} }
 
-      // this resource has no methods
+      # this resource has no methods
       methods = {}
     }
 
     "/resourcethree" = {
-      // this resource will be created on dev and stage api
+      # this resource will be created on dev and stage api
       apis = { dev = {}, staging = {} }
 
-      // this resource has 1 method: OPTIONS
+      # this resource has 1 method: OPTIONS
       methods = {
         "OPTIONS" = {
           request = {
