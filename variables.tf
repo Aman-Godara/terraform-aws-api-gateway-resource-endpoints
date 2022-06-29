@@ -1,6 +1,7 @@
 variable "sep" {
   description = "key separator"
   nullable    = false
+
   type        = string
   default     = " - "
 }

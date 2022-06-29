@@ -1,4 +1,4 @@
-# fill the details between <>
+# replace all <some text inside it> with the required details
 
 aws_region = "<aws region>"
 
@@ -11,7 +11,7 @@ apis = {
     root_id     = "<id of dev rest api's root resource>"
     methods = {
       "GET" = {
-        type                    = "HTTP"
+        type                    = "MOCK"
         integration_http_method = "GET"
         uri                     = "<urihere>"
         authorization           = "NONE"
@@ -20,7 +20,7 @@ apis = {
         connection_type         = null
       }
       "POST" = {
-        type                    = "HTTP"
+        type                    = "MOCK"
         integration_http_method = "POST"
         uri                     = "<urihere>"
         authorization           = "NONE"
@@ -70,7 +70,7 @@ apis = {
     root_id     = "id of staging rest api's root resource"
     methods = {
       "GET" = {
-        type                    = "HTTP"
+        type                    = "MOCK"
         integration_http_method = "GET"
         uri                     = "<urihere>"
         authorization           = "NONE"
@@ -79,7 +79,7 @@ apis = {
         connection_type         = null
       }
       "POST" = {
-        type                    = "HTTP"
+        type                    = "MOCK"
         integration_http_method = "POST"
         uri                     = "<urihere>"
         authorization           = "NONE"

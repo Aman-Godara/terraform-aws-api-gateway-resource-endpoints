@@ -18,6 +18,10 @@ resource "aws_api_gateway_method" "method" {
   request_parameters = { for k, v in local.resource_method_request_parameters[each.value.resource_method_key] :
     v.value => v.required if substr(v.value, 0, 15) == "method.request."
   }
+
+  depends_on = [
+    aws_api_gateway_resource.resource
+  ]
 }
 
 resource "aws_api_gateway_integration" "integration" {
@@ -35,6 +39,11 @@ resource "aws_api_gateway_integration" "integration" {
   request_parameters = { for k, v in local.resource_method_request_parameters[each.value.resource_method_key] :
     k => v.value
   }
+
+  depends_on = [
+    aws_api_gateway_resource.resource,
+    aws_api_gateway_method.method
+  ]
 }
 
 resource "aws_api_gateway_method_response" "method_response" {
@@ -49,6 +58,12 @@ resource "aws_api_gateway_method_response" "method_response" {
   response_parameters = { for k, v in each.value.response_parameters :
     k => v.return
   }
+
+  depends_on = [
+    aws_api_gateway_resource.resource,
+    aws_api_gateway_method.method,
+    aws_api_gateway_integration.integration,
+  ]
 }
 
 resource "aws_api_gateway_integration_response" "integration_response" {
@@ -65,4 +80,10 @@ resource "aws_api_gateway_integration_response" "integration_response" {
   response_parameters = { for k, v in each.value.response_parameters :
     k => v.value
   }
+
+  depends_on = [
+    aws_api_gateway_resource.resource,
+    aws_api_gateway_integration.integration,
+    aws_api_gateway_method_response.method_response
+  ]
 }

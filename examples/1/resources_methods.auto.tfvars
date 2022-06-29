@@ -1,4 +1,4 @@
-# fill the details between <>
+# replace all <some text inside it> with the required details
 
 # details of 3 resources & their methods
 # THIS WILL BE FILLED BY BACKEND ENGINEERS, WHEN DEFAULT SETTINGS ARE OVERRIDEN THEY SHOULD BE VERIFIED BY THE DEVOPS ENGINEER

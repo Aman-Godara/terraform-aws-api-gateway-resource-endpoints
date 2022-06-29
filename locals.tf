@@ -55,7 +55,6 @@ locals {
         "${ka}${var.sep}${kr}${var.sep}${km}" => {
           rest_api_id             = local.resource_details[kr][ka].rest_api_id
           http_method             = km
-          resource                = kr
           api_resource_key        = "${ka}${var.sep}${kr}"
           resource_method_key     = "${kr}${var.sep}${km}"
           integration_http_method = local.resource_details[kr][ka].methods[km].integration_http_method
