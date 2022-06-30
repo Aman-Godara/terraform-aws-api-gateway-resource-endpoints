@@ -1,14 +1,12 @@
-# replace all <some text inside it> with the required details
-
-aws_region = "<aws region>"
+aws_region = "ap-south-1" # change this value before to proceed
 
 
 # default settings for dev and staging apis
 # THIS WILL BE FILLED BY THE DEVOPS ENGINEER
 apis = {
   "dev" = {
-    rest_api_id = "<id of dev rest api>"
-    root_id     = "<id of dev rest api's root resource>"
+    rest_api_id = "xq2qws0si8" # change this value before to proceed
+    root_id     = "f2mkujtt1a" # change this value before to proceed
     methods = {
       "GET" = {
         type                    = "HTTP"
@@ -66,8 +64,8 @@ apis = {
     }
   }
   "staging" = {
-    rest_api_id = "<id of staging rest api>"
-    root_id     = "<id of staging rest api's root resource>"
+    rest_api_id = "kqdo81h562" # change this value before to proceed
+    root_id     = "j7u9jt1k75" # change this value before to proceed
     methods = {
       "GET" = {
         type                    = "HTTP"
