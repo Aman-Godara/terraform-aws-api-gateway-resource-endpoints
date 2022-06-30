@@ -1,13 +1,21 @@
 # Description
 [dev and staging API on AWS API Gateway](./AWS%20API%20Gateway.JPG)
 
-## Before:
-[dev API](./dev%20API%20Before.JPG)
-[staging API](./staging%20API%20Before.JPG)
+### Before
 
-## After:
-[dev API](./dev%20API%20After.JPG)
-[staging API](./staging%20API%20After.JPG)
+##### dev API
+<img src="./dev API Before.JPG">
+
+##### staging API
+<img src="./staging API Before.JPG">
+
+### After
+
+##### dev API
+<img src="./dev API After.JPG">
+
+##### staging API
+<img src="./staging API After.JPG">
 
 # Steps to run this example without any modification:
 
@@ -20,9 +28,10 @@
 
 # Steps to modify & run this example
 
-It is recommended for better undderstanding to follow [Steps to run this example without any modification](#steps-to-run-this-example-without-any-modification) before you modify & run this example
+It is recommended for better understanding to follow [Steps to run this example without any modification](#steps-to-run-this-example-without-any-modification) before you modify & run this example
 
 1. Modify default_settings.auto.tfvars file and resources_methods.auto.tfvars file as per your wish
 2. Jump to [Steps to run this example without any modification](#steps-to-run-this-example-without-any-modification). Ignore step **1**, **2** and **3** if they are done already.
 
-Note: If you get any error read the console messages to understand the issue.
+
+**Note: If you get any error read the console messages to understand the issue.**
