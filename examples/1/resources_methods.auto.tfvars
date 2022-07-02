@@ -1,5 +1,3 @@
-# replace all <some text inside it> with the required details
-
 # details of 3 resources & their methods
 # THIS WILL BE FILLED BY BACKEND ENGINEERS, WHEN DEFAULT SETTINGS ARE OVERRIDEN THEY SHOULD BE VERIFIED BY THE DEVOPS ENGINEER
 resources = {
@@ -52,7 +50,7 @@ resources = {
   }
 
   "/resourcetwo" = {
-    # this resource will be created on dev and stage api
+    # this resource will be created on dev and staging api
     apis = { dev = {}, staging = {} }
 
     # this resource has no methods
@@ -60,7 +58,7 @@ resources = {
   }
 
   "/resourcethree" = {
-    # this resource will be created on dev and stage api
+    # this resource will be created on dev and staging api
     apis = { dev = {}, staging = {} }
 
     # this resource has 1 method: OPTIONS
