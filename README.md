@@ -2,7 +2,13 @@
 
 Terraform module to create resources and methods like GET, PUT, POST, DELETE, OPTIONS, etc on AWS API Gateway for REST APIs. To know more about Terraform (IaC) visit: https://www.terraform.io.
 
-This module is designed to require ZERO knowledge of AWS or DevOps when creating resources & methods with default settings. This allows even the non-DevOps engineers with no knowledge of AWS to use the module on their own.
+This module is designed to require ZERO knowledge of AWS or DevOps when creating resources & methods with default settings, this allows even the non-DevOps engineers with no knowledge of AWS to use the module on their own.
+
+# Motivation
+Creating resources & methods on AWS API Gateway is a cumbersome task. Many Backend engineers at author's organization mentioned their dissatisfaction with the AWS Management Console's UI for creating resources & methods. Task was so frequent that it required Backend engineers to learn some DevOps to do it on AWS and felt redundant at the same time.
+
+
+Author felt the need to create a module for non-DevOps engineers to mention the minimal details of what they want to create and let the module do the heavy-lifting of managing AWS API Gateway for them.
 
 # Features
 
