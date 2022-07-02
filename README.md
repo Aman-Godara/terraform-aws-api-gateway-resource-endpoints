@@ -33,12 +33,12 @@ Atleast 80% of all the resources & methods are observed to follow the default se
 - Newer version of module might be backwards incompatible as Terraform Language is a work in progress. Though migration guides will be helpful.
 - DOCUMENTATION is not going to be a small one (not present yet, hence quite small as of now)
 
-# How to setup the module (one time setup)
+# How to setup the module
 
-### Pre-requisities for using the module
+### Pre-requisities
 1. Terraform
 2. AWS CLI
-3. AWS access & secret key
+3. AWS access & secret key of your AWS Management Console
 
 ### Follow the steps given below
 
@@ -58,7 +58,7 @@ This module is a DEMO module written to highlight the capabilities of ACTUAL mod
 
 ## How to buy ACTUAL module
 
-Please wait for the first release of ACTUAL module.
+Please wait for the first release. Drop a star on the repository if you liked author's work.
 
 ### Pricing
 
