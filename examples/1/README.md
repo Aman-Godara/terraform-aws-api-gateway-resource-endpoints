@@ -1,23 +1,23 @@
 # 1). Description
 
 ## 1.1). dev and staging API on AWS API Gateway
-<img src="./images/AWS API Gateway.JPG" width="750" height="220" >
+<img src="./images/AWS API Gateway.JPG" width="850" height="250" >
 
 ## 1.2). Before
 
 ##### 1.2.1). dev API
-<img src="./images/dev API Before.JPG" width="750" height="220" >
+<img src="./images/dev API Before.JPG" width="850" height="250" >
 
 ##### 1.2.2). staging API
-<img src="./images/staging API Before.JPG" width="750" height="220" >
+<img src="./images/staging API Before.JPG" width="850" height="250" >
 
 ## 1.3). After
 
 ##### 1.3.1). dev API
-<img src="./images/dev API After.JPG" width="750" height="220" >
+<img src="./images/dev API After.JPG" width="850" height="250" >
 
 ##### 1.3.2). staging API
-<img src="./images/staging API After.JPG" width="750" height="220" >
+<img src="./images/staging API After.JPG" width="850" height="250" >
 
 # 2). Steps to run this example without any modification:
 
@@ -30,10 +30,10 @@
 
 # 3). Steps to modify & run this example
 
-It is recommended for better understanding to follow [Steps to run this example without any modification](#steps-to-run-this-example-without-any-modification) before you modify & run this example
+It is recommended for better understanding to follow [Steps to run this example without any modification](#steps-to-run-this-example-without-any-modification) before you modify & run this example.
 
 1. Modify default_settings.auto.tfvars file and resources_methods.auto.tfvars file as per your wish
-2. Jump to [Steps to run this example without any modification](#steps-to-run-this-example-without-any-modification). Ignore step **1**, **2** and **3** if they are done already.
+2. Jump to [Steps to run this example without any modification](#steps-to-run-this-example-without-any-modification). Ignore step **1**, **2** and **3** if they are done already
 
 
 # 4). How to fix errors
