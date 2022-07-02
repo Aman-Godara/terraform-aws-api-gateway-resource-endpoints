@@ -1,5 +1,5 @@
 # details of 3 resources with no methods
-# THIS WILL BE FILLED BY BACKEND ENGINEERS, WHEN DEFAULT SETTINGS ARE OVERRIDEN THEY SHOULD BE VERIFIED BY THE DEVOPS ENGINEER
+# THIS WILL BE FILLED BY BACKEND ENGINEERS, WHEN DEFAULT SETTINGS ARE OVERRIDEN THEY SHOULD BE VERIFIED BY DEVOPS ENGINEER
 resources = {
   "/resourceone" = {
     # this resource will be created on dev, staging & prod api, no default settings will be overridden

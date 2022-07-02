@@ -2,7 +2,7 @@ aws_region = "ap-south-1" # TODO: change this value to proceed
 
 
 # default settings for dev and staging apis
-# THIS WILL BE FILLED BY THE DEVOPS ENGINEER
+# THIS WILL BE FILLED BY DEVOPS ENGINEER
 apis = {
   "dev" = {
     rest_api_id = "xq2qws0si8" # TODO: change this value to proceed
