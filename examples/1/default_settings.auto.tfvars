@@ -1,12 +1,12 @@
-aws_region = "ap-south-1" # change this value before to proceed
+aws_region = "ap-south-1" # TODO: change this value to proceed
 
 
 # default settings for dev and staging apis
 # THIS WILL BE FILLED BY THE DEVOPS ENGINEER
 apis = {
   "dev" = {
-    rest_api_id = "xq2qws0si8" # change this value before to proceed
-    root_id     = "f2mkujtt1a" # change this value before to proceed
+    rest_api_id = "xq2qws0si8" # TODO: change this value to proceed
+    root_id     = "f2mkujtt1a" # TODO: change this value to proceed
     methods = {
       "GET" = {
         type                    = "HTTP"
@@ -64,8 +64,8 @@ apis = {
     }
   }
   "staging" = {
-    rest_api_id = "kqdo81h562" # change this value before to proceed
-    root_id     = "j7u9jt1k75" # change this value before to proceed
+    rest_api_id = "kqdo81h562" # TODO: change this value to proceed
+    root_id     = "j7u9jt1k75" # TODO: change this value to proceed
     methods = {
       "GET" = {
         type                    = "HTTP"
