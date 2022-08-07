@@ -50,17 +50,11 @@ Atleast 80% of all the resources & methods are observed to follow the default se
 6. Run `terraform apply`, type `yes` to approve the changes and now relax
 7. Reload your page on AWS Management Console to see the changes
 
-# Elephant in the room
+# DEMO module vs ACTUAL module
 
-This module is a DEMO module written to highlight the capabilities of ACTUAL module. The DEMO module is freely available, but has some limitations over ACTUAL module and the ACTUAL module which provides all functionalities to create resources & methods is pay-walled.
+This module is a DEMO module written to highlight the capabilities of ACTUAL module. ACTUAL module is 
+a still in progress.
 
-*You can earn percentage of the profit too by making contributions to DEMO and ACTUAL module's repositories. All forms of contributions/advices, be it technical or non-technical, are accepted, from improving DOCUMENTATION, providing feedbacks to testing the module.*
+Please leave your feedback so that the author can gather broader knowledge on the work: what you liked, what can be improved, what you disliked, etc. This will help the author think through the details and plan the development of the ACTUAL module accordingly.
 
-## How to buy ACTUAL module
-
-Please wait for the first release. Drop a star on the repository if you liked author's work.
-
-### Pricing
-
-- ~5 USD for **personal use**, upgradable to organizational use in ~17 USD
-- ~20 USD for **organizational use**
+Thank you
